@@ -1,0 +1,39 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color:  hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    min-height: 100vh;
+    font-size: 1.6rem;
+}
+
+.component {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.component .parte-de-cima{
+    background-color: #fff;
+    height: 20rem;
+    grid-area: 1 / 1 / 1/ 3;
+}
+
+.component .parte-de-baixo{
+    background-color: hsl(179, 62%, 43%);
+    height: 15rem; 
+}
+
+.component .parte-de-baixo .cadastro {
+    width: 30rem;
+    grid-area: 2 / 1 / 2 / 2;
+}
+
+.component .parte-de-baixo .why-us {
+    grid-area: 2 / 2 / 2 / 3;
+}
